@@ -24,7 +24,6 @@ namespace HTTP5112Asignment1.Controllers
         /// GET api/addten/0 -> 10
         /// GET api/addten/-9 -> 1
         /// </example>
-        [Route("api/addten/{id}")]
         [HttpGet("{id}")]
         public int AddTen(int id)
         {
