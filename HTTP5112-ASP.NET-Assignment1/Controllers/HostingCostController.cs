@@ -17,7 +17,9 @@ namespace HTTP5112Asignment1.Controllers
         /// <param name="id">The input number</param>
         /// <returns>Returns the hosting cost messages depending on the input number of fort nights stayed</returns>
         /// <example>
-        /// GET api/hostingcost/014152128 -> 
+        /// GET api/hostingcost/0 -> ["1 fortnights at $5.50/FN = $5.50 CAD","HST 13% = $0.72 CAD","Total = $6.22 CAD"]
+        /// GET api/hostingcost/14 -> ["2 fortnights at $5.50/FN = $11.00 CAD","HST 13% = $1.43 CAD","Total = $12.43 CAD"]
+        /// GET api/hostingcost/28 -> ["3 fortnights at $5.50/FN = $16.50 CAD","HST 13% = $2.14 CAD","Total = $18.64 CAD"]
         /// </example>
         [HttpGet("{id}")]
         public IEnumerable<string> Get(int id)
