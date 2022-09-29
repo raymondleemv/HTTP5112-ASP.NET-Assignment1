@@ -23,9 +23,9 @@ namespace HTTP5112Asignment1.Controllers
         public IEnumerable<string> Get(int id)
         {
             int numFortNights = id / 14 + 1;
-            float fhostingCost = numFortNights * 5.5f;
-            float fTax = fhostingCost * 0.13f;
-            float fTotal = fhostingCost + fTax;            
+            double fhostingCost = numFortNights * 5.5;
+            double fTax = Math.Round(fhostingCost * 0.13, 2);
+            double fTotal = fhostingCost + fTax;            
             string strHostingCost = numFortNights + " fortnights at $5.50/FN = $" + fhostingCost.ToString("0.00") + " CAD";
             string strTax = "HST 13% = $" + fTax.ToString("0.00") + " CAD";
             string strTotal = "Total = $" + fTotal.ToString("0.00") + " CAD";
