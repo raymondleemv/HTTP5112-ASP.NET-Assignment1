@@ -22,7 +22,7 @@ namespace HTTP5112Asignment1
         /// GET api/square/10 -> 100
         /// </example>
         [HttpGet("{id}")]
-        public int Get(int id)
+        public int Square(int id)
         {
             return id * id;
         }

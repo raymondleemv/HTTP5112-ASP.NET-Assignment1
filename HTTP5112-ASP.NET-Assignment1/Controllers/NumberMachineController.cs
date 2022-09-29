@@ -26,7 +26,7 @@ namespace HTTP5112Asignment1.Controllers
         /// GET api/numbermachine/3 -> 3
         /// </example>
         [HttpGet("{id}")]
-        public int Get(int id)
+        public int NumberMachine(int id)
         {
             return id + 1 * 5 / 5 - 1;
         }

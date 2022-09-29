@@ -22,7 +22,7 @@ namespace HTTP5112Asignment1.Controllers
         /// GET api/hostingcost/28 -> ["3 fortnights at $5.50/FN = $16.50 CAD","HST 13% = $2.14 CAD","Total = $18.64 CAD"]
         /// </example>
         [HttpGet("{id}")]
-        public IEnumerable<string> Get(int id)
+        public IEnumerable<string> HostingCost(int id)
         {
             int numFortNights = id / 14 + 1;
             double fhostingCost = numFortNights * 5.5;

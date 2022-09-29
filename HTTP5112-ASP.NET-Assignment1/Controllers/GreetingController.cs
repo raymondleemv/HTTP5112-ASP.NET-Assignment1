@@ -27,7 +27,7 @@ namespace HTTP5112Asignment1.Controllers
         /// GET api/greeting/0 -> Greetings to 0 people!
         /// </example>
         [HttpGet("{id}")]
-        public string Get(int id)
+        public string Greeting(int id)
         {
             return "Greetings to " + id + " people!";
         }
@@ -40,7 +40,7 @@ namespace HTTP5112Asignment1.Controllers
         /// POST api/greeting -> "Hello World!"
         /// </example>
         [HttpPost]
-        public string Post()
+        public string HelloWorld()
         {
             return "Hello World!";
         }
